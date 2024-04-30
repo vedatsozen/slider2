@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="sections">
+    <div id="section1">
+        <h1>Section 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minus nesciunt laboriosam molestias, iusto quibusdam iure eos vel. Deserunt non accusamus ex minus perferendis facilis quidem vero, ullam consequuntur voluptas!</p>
+
+    </div>
+    <div id="section2">
+        <h1>Section 2</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod sed veniam est aut suscipit repellat tenetur nihil, quidem, ab molestias nemo ipsum id alias vel! Doloribus nam modi quod deserunt!</p>
+
+    </div>  
+    <div id="section3">
+        <h1>Section 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quibusdam deserunt perspiciatis laboriosam repellendus dolorum! Enim corporis repellat officia, hic, quam, temporibus eius voluptatibus sit repellendus at vero vitae consequatur.</p>
+    </div>
+
+</div>
+    
+<nav>
+    <ul>
+        <li>
+            <a id="section1a" href="#"></a>
+        </li>
+        <li>
+            <a id="section2a" href="#"></a>
+        </li>
+        <li>
+            <a id="section3a" href="#"></a>
+        </li>
+    
+    </ul>
+</nav>
+
+<script>
+
+let sections = document.getElementById("sections");
+let section1a = document.getElementById("section1a");
+let section2a = document.getElementById("section2a");
+
+section1a.addEventListener("click", function() {
+sections.style.left = "0";
+})
+
+section2a.addEventListener("click", function() {
+sections.style.left = "-100vw";
+})
+
+section3a.addEventListener("click", function() {
+sections.style.left = "-200vw";
+})
+
+
+
+
+</script>
+</body>
+</html>
